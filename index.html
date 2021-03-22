@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aronija</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img class="logo" src="slike/aronijaLogo.png" alt="Logo">
+            <img id="menu-btn-ctn" class="menu-btn" src="slike/menu.svg" alt="">
+
+            <nav class="navigacija">
+                <img id="menu-exit-ctn" class = "menu-exit-btn" src="slike/exit.svg" alt="Exit">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Proizvodi</a></li>
+                    <li><a href="#">O nama</a></li>
+                    <li><a href="#">Kontakt</a></li>                   
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <img class = "background" src="slike/Aronija.jpg" alt="Aronija">
+            <img class="bar" src="slike/Bar.svg" alt="Bar">
+            <a class="button" href="https://www.youtube.com/watch?v=MT6koc3nAsY" target="_blank" >Play video</a>
+        </div>
+    </section>
+    
+
+    <script>
+        let menuBtn = document.getElementById('menu-btn-ctn')
+            nav = document.querySelector('nav');
+            menuExitBtn = document.getElementById('menu-exit-ctn');
+
+        menuBtn.addEventListener('click', () => {
+            nav.classList.add('menu-blok');
+        })
+
+        menuExitBtn.addEventListener('click', () => {
+            nav.classList.remove('menu-blok');
+        })
+    </script>
+
+</body>
+</html>

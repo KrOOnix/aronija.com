@@ -1,0 +1,97 @@
+:root{
+    --lila:#FF3366;
+}
+
+body{
+    margin: 0;
+}
+
+
+header{
+    background-color: var(--lila);
+    height: 4em;
+    width: 120em;
+    position: fixed;
+
+    .logo{
+        width: 3em;
+        position: relative;
+    }
+
+    .menu-btn{
+        position: relative;
+        margin-left: 97%;
+        bottom: 2em;
+        cursor: pointer;
+    }
+
+    nav{
+        display: none;
+    }
+}
+
+.background{
+    position: absolute;
+    max-width: 100%;
+    z-index: -999;
+}
+
+.bar{
+    
+    position: relative;
+    z-index: -1;
+    max-width: 100%;
+    top: 30em;
+
+}
+
+.button{
+    text-decoration: none;
+    position: relative;
+    border: var(--lila);
+    z-index: -1;
+    top: 36em;
+    right: -47%;
+    border-radius: .3em;
+    border:25px solid var(--lila);
+    background-color: var(--lila);
+    color: white;
+}
+
+nav.menu-blok{
+    display: block;
+}
+
+nav{
+    position:fixed;
+    z-index: 999;
+    width: 20%;
+    right: 0;
+    top: 0;
+    background: #250133;
+    height:100vh;
+    padding: 1em;
+
+    li{
+        list-style: none;
+        
+        a{
+            text-decoration: none;
+            color: white;
+            margin-top: 4em;
+
+            &:hover{
+                font-weight: bold;
+            }
+        }
+        padding: 1.5em;
+        font-size: 30px;
+    }
+
+    .menu-exit-btn{
+        float: right;
+        cursor: pointer;
+    }
+}
+
+
